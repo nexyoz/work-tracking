@@ -1,0 +1,132 @@
+/* 前面的样式保持不变 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 20px;
+}
+
+/* 添加新的日期分组样式 */
+.date-group {
+    margin-bottom: 2rem;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.date-header {
+    background: #4a90e2;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-records {
+    padding: 15px;
+}
+
+/* 修改记录卡片样式 */
+.work-record {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.work-record:last-child {
+    margin-bottom: 0;
+}
+
+.work-record:hover {
+    transform: translateX(5px);
+    background: #f1f5f9;
+}
+
+.record-content {
+    flex-grow: 1;
+}
+
+.record-time {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.record-type {
+    background-color: #4a90e2;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+/* 其他样式保持不变 */
+.record-type[data-type="微积分"] { background-color: #4a90e2; }
+.record-type[data-type="线代"] { background-color: #10b981; }
+.record-type[data-type="CPP"] { background-color: #8b5cf6; }
+.record-type[data-type="工程制图"] { background-color: #f59e0b; }
+.record-type[data-type="英语四级"] { background-color: #ec4899; }
+.record-type[data-type="数学建模"] { background-color: #6366f1; }
+
+/* 输入区域样式 */
+.input-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    margin-bottom: 1.2rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* 添加空记录样式 */
+.no-records {
+    text-align: center;
+    padding: 2rem;
+    color: #64748b;
+    font-style: italic;
+}
